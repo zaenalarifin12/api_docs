@@ -57,9 +57,65 @@
     "status"    :"success",
     "data"      : {
         "id"          : "1",
+        "name'        : "zaenal,
         "email"       : "zaenal@gmail.com",
-        "password"    : "zaenal123",
         "token"       : "5545454dfsdfsdgf54f55y"
+    }
+    
+}
+```
+
+
+
+## ShowProfile 
+
+* **URL**
+
+    {your_host}/api/v1/profile
+
+* **Method**
+
+    `GET`
+
+**Response Body**
+```
+{
+    status      : "success"
+    data        : {
+        "id"          : 1
+        "name"        : "zainal"
+        "email"       : "zaenal@gmail.com"
+    }
+    
+}
+```
+
+## EditProfile 
+
+* **URL**
+
+    {your_host}/api/v1/auth/login
+
+* **Method**
+
+    `PUT`
+
+**Request Body**
+```
+{
+    "name"        : "zainal"
+    "password"    : "zaenal123"
+}
+```
+
+**Response Body**
+```
+{
+    status      : "success"
+    data        : {
+        "id"          : 1
+        "name"        : "zainal"
+        "email"       : "zaenal@gmail.com"
     }
     
 }
